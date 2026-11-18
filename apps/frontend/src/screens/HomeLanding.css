@@ -10,7 +10,7 @@
   gap: 2rem;
   min-height: 82vh;
   padding: 3rem clamp(1.5rem, 8%, 8rem);
-  background: radial-gradient(1200px 600px at 80% -10%, #e0e7ff 0%, transparent 60%), #ffffff;
+  background: radial-gradient(1200px 600px at 80% -10%, #ff0000 0%, transparent 60%), #ffffff;
 }
 
 .landing-hero__copy h1 {
