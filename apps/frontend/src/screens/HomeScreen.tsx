@@ -83,7 +83,7 @@ export function HomeScreen({ onCadastro, onLogin, onDisciplinas }: HomeScreenPro
               simulados direcionados por matéria e conceito, feedback de desempenho e pontos por estudo.
             </p>
             <div className="cta-row">
-              <button type="button" className="btn btn-primary large" onClick={onDisciplinas}>
+              <button type="button" className="btn btn-primary large" >
                 Começar a Praticar Grátis
               </button>
               <button type="button" className="btn btn-link" onClick={onLogin}>Já tenho conta</button>

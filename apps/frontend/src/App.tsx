@@ -173,9 +173,10 @@ function App() {
   }
   
 if (screen === 'disciplinas') {
+   if (!usuario) { setScreen('login'); return null }
   return (
     <DisciplinasScreen
-      userName={usuario.full_name}
+      userName={usuario?.full_name}
       onNavigate={navegarMenu}
       onEstudar={(disciplinaId) => console.log('estudar', disciplinaId)} // ligar à tela de questões depois
       onPraticarRedacao={() => console.log('redação')}                   // idem
@@ -262,7 +263,6 @@ if (screen === 'disciplinas') {
     <HomeScreen
       onCadastro={() => setScreen('cadastro')}
       onLogin={() => setScreen('login')}
-      onDisciplinas={() => setScreen('disciplinas')}
     />
   )
 }
