@@ -263,6 +263,7 @@ if (screen === 'disciplinas') {
     <HomeScreen
       onCadastro={() => setScreen('cadastro')}
       onLogin={() => setScreen('login')}
+      onDisciplinas={() => setScreen('disciplinas')}
     />
   )
 }

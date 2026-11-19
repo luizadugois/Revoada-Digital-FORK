@@ -12,6 +12,7 @@ const Livro3D = lazy(() => import('../components/landing/Livro3D'));
 type HomeScreenProps = {
   onCadastro: () => void;
   onLogin: () => void;
+  onDisciplinas: () => void;
 };
 
 const DIFERENCIAIS = [
@@ -29,7 +30,7 @@ const DIFERENCIAIS = [
   },
 ];
 
-export function HomeScreen({ onCadastro, onLogin }: HomeScreenProps) {
+export function HomeScreen({ onCadastro, onLogin, onDisciplinas }: HomeScreenProps) {
   const reducedMotion = useReducedMotion();
   const [progresso, setProgresso] = useState(0);
 
