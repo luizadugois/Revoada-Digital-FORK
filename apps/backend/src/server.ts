@@ -22,7 +22,7 @@ export const app = express();
 // middleware no runtime serverless.
 const defaultOrigins = [
 	'https://revoada-digital-fork-lu.vercel.app/',
-	'http://localhost:5173',
+	'http://localhost:5173' ,
 ];
 
 const allowedOrigins = (process.env.CORS_ORIGINS
