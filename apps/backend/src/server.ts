@@ -21,7 +21,7 @@ export const app = express();
 // respondido explicitamente para evitar depender do comportamento default do
 // middleware no runtime serverless.
 const defaultOrigins = [
-	'https://revoada-digital-frontend.vercel.app',
+	'https://revoada-digital-fork-lu.vercel.app/',
 	'http://localhost:5173',
 ];
 
