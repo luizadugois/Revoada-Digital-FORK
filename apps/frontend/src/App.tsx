@@ -173,7 +173,6 @@ function App() {
   }
   
 if (screen === 'disciplinas') {
-  if (!usuario) { setScreen('login'); return null }
   return (
     <DisciplinasScreen
       userName={usuario.full_name}
