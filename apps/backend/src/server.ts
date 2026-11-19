@@ -30,10 +30,12 @@ const allowedOrigins = (process.env.CORS_ORIGINS
 	: defaultOrigins
 ).map((origin) => origin.trim()).filter(Boolean);
 
+const allowAllOrigins = process.env.CORS_ALLOW_ALL === 'true';
+
 const corsOptions: CorsOptions = {
 	origin(origin, callback) {
 		// Requisições sem Origin (ex.: curl, health checks) são permitidas.
-		if (!origin || allowedOrigins.includes(origin)) {
+		if (!origin || allowAllOrigins || allowedOrigins.includes(origin)) {
 			callback(null, true);
 			return;
 		}
